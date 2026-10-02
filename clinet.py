@@ -8,7 +8,7 @@ CLIENT = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 CLIENT.connect(ADDr)
 
-data="Hello bro"
+data=input()
 CLIENT.sendall(data.encode('utf-8'))
 
 response = CLIENT.recv(1024)
